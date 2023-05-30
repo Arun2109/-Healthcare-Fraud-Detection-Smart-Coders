@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Healthcare Fraud Detection</title>
+	<style>
+             
+			 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,400&display=swap');
+            *{
+				font-family: 'Poppins', sans-serif;
+			}
+		body {
+			
+			background-image:url("https://i.ibb.co/5k253qq/sha-Photo-Room.png") ;
+			background-size: cover;
+			
+			
+		  
+		}
+
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			backdrop-filter: blur(0px);
+			padding: 20px; 
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+
+		label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 10px;
+			
+		}
+
+		input[type="file"] {
+			margin-bottom: 20px; 
+			border: none;
+			padding: 3px; 
+			border-radius: 15px;
+		    width: 45%;
+			
+			
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color:#373737;
+			color: #fff;
+			width: 100px;
+			padding: 15px ;
+			border: none;
+			border-radius: 15px;
+			font-size: 10px;
+			cursor: pointer;
+			transition:.5s ease-in-out;
+            margin-left: 40%;       
+                        
+
+		}
+		.file-input{
+			cursor: pointer;
+			backdrop-filter: blur(22px); 
+			padding-right: 10px; 
+			border: none; 
+		}
+
+			
+
+		input[type="submit"]:hover {
+			background-color: rgb(17, 168, 17);
+		}
+	</style>
+</head>
+<body>
+	<div style="text-align: center;">
+		
+	</div>
+	<h1>Healthcare Fraud Detection</h1>
+	<form action="#" method="post" enctype="multipart/form-data">
+		<label for="benfi">Beneficiary CSV file:</label>
+		<input class="file-input" type="file" id="benfi" name="benfi" accept=".csv">
+
+		<label for="inpatentt">Inpatient CSV file:</label>
+		<input class="file-input" type="file" id="inpatentt" name="inpatentt" accept=".csv">
+
+		<label for="outpatient">Outpatient CSV file:</label>
+		<input class="file-input" type="file" id="outpatient" name="outpatient" accept=".csv">
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

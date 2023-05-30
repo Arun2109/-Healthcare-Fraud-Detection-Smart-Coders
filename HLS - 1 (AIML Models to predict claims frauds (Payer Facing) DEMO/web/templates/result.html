@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prediction details</title>
+	<style>body {
+			
+		background-image:url("https://i.ibb.co/5k253qq/sha-Photo-Room.png") ;
+		background-size: cover;
+	  
+	}
+
+		table {
+			border-collapse: collapse;
+			border-style: double;
+			width: 18%;
+		}
+		table.center {
+         margin-left: auto; 
+         margin-right: auto;
+        }
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border: 1px solid rgb(42, 40, 40);
+		}
+	</style>
+</head>
+<body>
+	<table class="center">
+		<thead>
+			<tr>
+				<th>provider_ID</th>
+				<th>Prediction</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for item in df %}
+				<tr>
+					{% if item == 1 %}
+					<td>{{id_[loop.index-1]}}</td>                                                              
+					<td>Fraud</td>
+					{% else %}
+					<td>{{id_[loop.index-1]}}</td>
+					<td>NOT Fraud</td>
+					{% endif %}
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</body>
+</html>
